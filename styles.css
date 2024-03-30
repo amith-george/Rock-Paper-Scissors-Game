@@ -1,5 +1,20 @@
+body{
+    background-color: lightcoral;
+}
+
 .info{
     text-align: center;
     font-size: larger;
     padding-top: 50px;
+}
+
+.buttons {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+}
+
+button {
+    margin: 20px;
+    padding: 20px; 
 }

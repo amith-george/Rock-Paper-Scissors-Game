@@ -1,5 +1,6 @@
 let pCount = 0
 let cCount = 0;
+let bCount = 0;
 let Pchoice;
 let Rchoice;
 
@@ -42,35 +43,48 @@ function playGame(pchoice,cchoice){
 }
 
 
-function fiveround(){
-    for(let i=0; i<5; i++)
-    {
-        Pchoice = prompt("Enter your choice (Rock/Paper/Scissors): ");
-        Pchoice = Pchoice.toLowerCase();
-        Rchoice = getComputerChoice();
-        if (Pchoice != "rock" && Pchoice != "paper" && Pchoice != "scissors")
-        {
-            alert("Enter a proper choice idiot!");
-            return;
-        }
-        else{
-        playGame(Pchoice,Rchoice);
-        }
-    }
-
-    if (pCount == cCount){
-        console.log("You tied with the AI with the score "+pCount+" and "+cCount+"!");
-    }
-    else if (pCount > cCount)
-    {
-        console.log("You won against the AI with the score "+pCount+" and "+cCount+"!");
-    }
-    else {
-        console.log("You lost against the AI with the score "+pCount+" and "+cCount+"!");
-    }
+function rock(){
+    Pchoice = "rock";
+    bCount++;
+    fiveround();
 }
 
-fiveround();
+
+function paper(){
+    Pchoice = "paper";
+    bCount++;
+    fiveround();
+}
+
+function scissors(){
+    Pchoice = "scissors";
+    bCount++;
+    fiveround();
+}
+
+
+
+function fiveround(){
+
+    if (bCount > 5)
+    {
+        if (pCount == cCount){
+            console.log("You tied with the AI with the score "+pCount+" and "+cCount+"!");
+        }
+        else if (pCount > cCount)
+        {
+            console.log("You won against the AI with the score "+pCount+" and "+cCount+"!");
+        }
+        else {
+            console.log("You lost against the AI with the score "+pCount+" and "+cCount+"!");
+        }
+    }
+    else {
+        Rchoice = getComputerChoice();    
+        playGame(Pchoice,Rchoice);
+    }
+
+}
 
 
 
