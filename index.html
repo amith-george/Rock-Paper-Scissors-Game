@@ -11,20 +11,53 @@
 
 
 <body>
-    <div class="info">
     <script src="script.js"></script>
-    <h1><centre> Rock Paper Scissors </centre></h1>
-    <br></br>
-    <p><centre> You will be playing 5 rounds of rock paper scissors with the computer to see who will emerge victorious! </centre></p>
-    <p><centre> The rules are simple: Rock beats scissors, Scissors beats paper and Paper beats rock. </centre></p>
-    <p><centre> Check the Console after inspecting element to see the results! </centre></p>
+
+    <div class="start">
+        <h1><centre> Rock Paper Scissors </centre></h1>
+        <p><centre> You will be playing 5 rounds of rock paper scissors with the computer to see who will emerge victorious! </centre></p>
+        <p><centre> The rules are simple: Rock beats scissors, Scissors beats paper and Paper beats rock. </centre></p>
+        <p><centre> Check the Console after inspecting element to see the results! </centre></p>
+        <br></br>
     </div>
-    <br></br>
-    <div class="buttons">
-        <button onclick="rock()"> Rock </button>
-        <button onclick="paper()"> Paper </button>
-        <button onclick="scissors()"> Scissors </button>
+
+    <section class="info">
+        <div class="container">
+        
+            <div class="content">
+
+                <div class="choices">
+                <button>
+                <img src="./images/rock.png" alt="instagram" class="instagram">
+                </button>
+                <p> Rock </p>
+                </div>
+
+                <div class="choices">
+                <button>
+                <img src="./images/paper.png" alt="myanimelist" class="myanimelist">
+                </button>
+                <p> Paper </p>
+                </div>
+
+                <div class="choices">
+                <button>
+                <img src="./images/scissors.png" alt="linkedin" class="linkedin">
+                </button>
+                <p> Scissors </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="result">
+        
     </div>
+
+    <div class="footer"> 
+        Copyright © The Odin Project 2021 
+    </div> 
 
     
 </body>
