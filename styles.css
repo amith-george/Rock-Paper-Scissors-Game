@@ -1,14 +1,35 @@
 body{
-    background-color: darkgray;
+    background-color: teal;
 }
 
 
 /* Information */
 
 .start{
+    font-size: 30px;
+    font-weight: bolder;
     text-align: center;
-    font-size: larger;
-    padding-top: 50px;
+    color: #1F2937;
+    background-color: pink;
+    border: black;
+    border-style: solid;
+    border-radius: 40px;
+    border-width: 10px;
+    margin-bottom: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 50px;
+}
+
+#rounds {
+    padding: 20px;
+    font-size: 17px;
+}
+
+#submit {
+    border-radius: 0px;
+    margin-bottom: 20px;
+    margin-left: 10px;
 }
 
 
@@ -20,11 +41,20 @@ body{
     font-weight: bolder;
     color: #1F2937;
     margin-bottom: 70px;
+    background-color: pink;
+    border: black;
+    border-style: solid;
+    border-radius: 40px;
+    border-width: 10px;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding-top: 70px;
 }
 
 button{
-    background-color: darkgray;
+    background-color: white;
     padding: 20px;
+    border-radius: 30px;
 }
 
 .info .container {
@@ -52,14 +82,26 @@ button{
 }
 
 
-.footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 52px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #eee;
+  /* Result */
+
+
+  .finaloutput{
+    background-color: pink;
+    border: black;
+    border-style: solid;
+    border-radius: 40px;
+    border-width: 10px;
+    margin-bottom: 100px;
+    margin-left: 250px;
+    margin-right: 250px;
+
+}
+
+
+#result, #final, #score, #rCount{
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    margin-bottom: 70px;
+    text-align: center;
   }

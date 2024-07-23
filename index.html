@@ -11,15 +11,19 @@
 
 
 <body>
-    <script src="script.js"></script>
+    
 
+    <section class="details">
     <div class="start">
-        <h1><centre> Rock Paper Scissors </centre></h1>
-        <p><centre> You will be playing 5 rounds of rock paper scissors with the computer to see who will emerge victorious! </centre></p>
-        <p><centre> The rules are simple: Rock beats scissors, Scissors beats paper and Paper beats rock. </centre></p>
-        <p><centre> Check the Console after inspecting element to see the results! </centre></p>
-        <br></br>
+        <h1> Rock Paper Scissors </h1>
+        <p> Welcome to the game of Rock Paper and Scissors, time to decide the fate of your life with this simple game! </p>
+        <p> The rules are simple: Rock beats scissors, Scissors beats paper and Paper beats rock. </p>
+        <p> Please enter the number of rounds you want to play.</p>
+        <input type="text" id="rounds" placeholder="Enter the rounds">
+        <button id="submit"> Enter </button>
     </div>
+    </section>
+
 
     <section class="info">
         <div class="container">
@@ -27,21 +31,21 @@
             <div class="content">
 
                 <div class="choices">
-                <button>
+                <button id="rockbutt">
                 <img src="./images/rock.png" alt="instagram" class="instagram">
                 </button>
                 <p> Rock </p>
                 </div>
 
                 <div class="choices">
-                <button>
+                <button id="paperbutt">
                 <img src="./images/paper.png" alt="myanimelist" class="myanimelist">
                 </button>
                 <p> Paper </p>
                 </div>
 
                 <div class="choices">
-                <button>
+                <button id="scissorbutt">
                 <img src="./images/scissors.png" alt="linkedin" class="linkedin">
                 </button>
                 <p> Scissors </p>
@@ -51,15 +55,26 @@
         </div>
     </section>
 
-    <div class="result">
-        
-    </div>
+    <section class="finaloutput">
+        <div class="output">
+            <p id="score">
+                0     -     0 
+            </p>
+            <p id="rCount">
+                
+            </p>
+            <p id="result">
+                
+            </p>
+            <p id="final">
+                
+            </p>
+        </div>
+    </section>
 
-    <div class="footer"> 
-        Copyright © The Odin Project 2021 
-    </div> 
 
-    
+
+    <script src="script.js"></script>
 </body>
 
 </html>

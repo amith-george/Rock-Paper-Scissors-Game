@@ -4,6 +4,41 @@ let bCount = 0;
 let Pchoice;
 let Rchoice;
 
+let score = document.querySelector("#score");
+let outcome = document.querySelector("#result");
+let result = document.querySelector("#final");
+let input = document.querySelector("#rounds");
+let submit = document.querySelector("#submit");
+let rCount = document.querySelector("#rCount");
+
+
+submit.addEventListener("click", () => {
+    let rounds = input.value;
+    input.value='';
+
+
+let rockbutt = document.querySelector("#rockbutt");
+rockbutt.addEventListener("click", () => {
+    Pchoice= "rock";
+    bCount++;
+    fiveround();
+});
+
+let paperbutt = document.querySelector("#paperbutt");
+paperbutt.addEventListener("click", () => {
+    Pchoice = "paper";
+    bCount++;
+    fiveround();
+});
+
+let scissorbutt = document.querySelector("#scissorbutt");
+scissorbutt.addEventListener("click", () => {
+    Pchoice = "scissors";
+    bCount++;
+    fiveround();
+});
+
+
 function getComputerChoice() {
     let rnum = Math.floor(Math.random()*3);
     if (rnum == 0) {
@@ -19,64 +54,52 @@ function getComputerChoice() {
 function playGame(pchoice,cchoice){
     if (pchoice == "rock" && cchoice == "paper")
     {
-        console.log("You just got beat! The play made by you and the AI was "+pchoice+" and "+cchoice+".");
+        outcome.textContent = "You just got beat! The play made by you and the AI was "+pchoice+" and "+cchoice+".";
         cCount++;
+        score.textContent = pCount+"     -     "+cCount;
+        rCount.textContent = "(Round "+bCount+")";
     }
     else if (pchoice == "paper" && cchoice == "scissors")
     {
-        console.log("You just got beat! The play made by you and the AI was "+pchoice+" and "+cchoice+".");
+        outcome.textContent = "You just got beat! The play made by you and the AI was "+pchoice+" and "+cchoice+".";
         cCount++;
+        score.textContent = pCount+"     -     "+cCount;
+        rCount.textContent = "(Round "+bCount+")";
     }
     else if (pchoice == "scissors" && cchoice == "rock")
     {
-        console.log("You just got beat! The play made by you and the AI was "+pchoice+" and "+cchoice+".");
+        outcome.textContent = "You just got beat! The play made by you and the AI was "+pchoice+" and "+cchoice+".";
         cCount++;
+        score.textContent = pCount+"     -     "+cCount;
+        rCount.textContent = "(Round "+bCount+")";
     }
     else if (pchoice == cchoice)
     {
-        console.log("You tied with the AI! The play made by you and the AI was "+pchoice+" and "+cchoice+".");
+        outcome.textContent = "You tied with the AI! The play made by you and the AI was "+pchoice+" and "+cchoice+".";
+        score.textContent = pCount+"     -     "+cCount;
+        rCount.textContent = "(Round "+bCount+")";
     }
     else {
-        console.log("You just won! The play made by you and the AI was "+pchoice+" and "+cchoice+".");
+        outcome.textContent = "You just won! The play made by you and the AI was "+pchoice+" and "+cchoice+".";
         pCount++;
+        score.textContent = pCount+"     -     "+cCount;
+        rCount.textContent = "(Round "+bCount+")";
     }
 }
-
-
-function rock(){
-    Pchoice = "rock";
-    bCount++;
-    fiveround();
-}
-
-
-function paper(){
-    Pchoice = "paper";
-    bCount++;
-    fiveround();
-}
-
-function scissors(){
-    Pchoice = "scissors";
-    bCount++;
-    fiveround();
-}
-
 
 
 function fiveround(){
-
-    if (bCount > 5)
+    if (bCount > rounds)
     {
         if (pCount == cCount){
-            console.log("You tied with the AI with the score "+pCount+" and "+cCount+"!");
+            final.textContent = "You tied with the AI!";
         }
         else if (pCount > cCount)
         {
-            console.log("You won against the AI with the score "+pCount+" and "+cCount+"!");
+            final.textContent = "You won against the AI!";
         }
         else {
-            console.log("You lost against the AI with the score "+pCount+" and "+cCount+"!");
+            final.textContent = "You lost against the AI!";
         }
     }
     else {
@@ -85,6 +108,8 @@ function fiveround(){
     }
 
 }
+});
 
+input.focus();
 
 
