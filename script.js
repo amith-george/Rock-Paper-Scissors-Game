@@ -56,49 +56,29 @@ function playGame(pchoice,cchoice){
     {
         outcome.textContent = "You just got beat! The play made by you and the AI was "+pchoice+" and "+cchoice+".";
         cCount++;
-<<<<<<< HEAD
         score.textContent = pCount+"     -     "+cCount+"      (Round "+bCount+")";
-=======
-        score.textContent = pCount+"     -     "+cCount+"     (Round "+bCount+")";
->>>>>>> d7bdae730f932238d213eaecf4c83924dfc19343
     }
     else if (pchoice == "paper" && cchoice == "scissors")
     {
         outcome.textContent = "You just got beat! The play made by you and the AI was "+pchoice+" and "+cchoice+".";
         cCount++;
-<<<<<<< HEAD
         score.textContent = pCount+"     -     "+cCount+"      (Round "+bCount+")";
-=======
-        score.textContent = pCount+"     -     "+cCount+"     (Round "+bCount+")";
->>>>>>> d7bdae730f932238d213eaecf4c83924dfc19343
     }
     else if (pchoice == "scissors" && cchoice == "rock")
     {
         outcome.textContent = "You just got beat! The play made by you and the AI was "+pchoice+" and "+cchoice+".";
         cCount++;
-<<<<<<< HEAD
         score.textContent = pCount+"     -     "+cCount+"      (Round "+bCount+")";
-=======
-        score.textContent = pCount+"     -     "+cCount+"     (Round "+bCount+")";
->>>>>>> d7bdae730f932238d213eaecf4c83924dfc19343
     }
     else if (pchoice == cchoice)
     {
         outcome.textContent = "You tied with the AI! The play made by you and the AI was "+pchoice+" and "+cchoice+".";
-<<<<<<< HEAD
         score.textContent = pCount+"     -     "+cCount+"      (Round "+bCount+")";
-=======
-        score.textContent = pCount+"     -     "+cCount+"     (Round "+bCount+")";
->>>>>>> d7bdae730f932238d213eaecf4c83924dfc19343
     }
     else {
         outcome.textContent = "You just won! The play made by you and the AI was "+pchoice+" and "+cchoice+".";
         pCount++;
-<<<<<<< HEAD
         score.textContent = pCount+"     -     "+cCount+"      (Round "+bCount+")";
-=======
-        score.textContent = pCount+"     -     "+cCount+"     (Round "+bCount+")";
->>>>>>> d7bdae730f932238d213eaecf4c83924dfc19343
     }
 }
 
