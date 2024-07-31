@@ -56,34 +56,29 @@ function playGame(pchoice,cchoice){
     {
         outcome.textContent = "You just got beat! The play made by you and the AI was "+pchoice+" and "+cchoice+".";
         cCount++;
-        score.textContent = pCount+"     -     "+cCount;
-        rCount.textContent = "(Round "+bCount+")";
+        score.textContent = pCount+"     -     "+cCount+"     (Round "+bCount+")";
     }
     else if (pchoice == "paper" && cchoice == "scissors")
     {
         outcome.textContent = "You just got beat! The play made by you and the AI was "+pchoice+" and "+cchoice+".";
         cCount++;
-        score.textContent = pCount+"     -     "+cCount;
-        rCount.textContent = "(Round "+bCount+")";
+        score.textContent = pCount+"     -     "+cCount+"     (Round "+bCount+")";
     }
     else if (pchoice == "scissors" && cchoice == "rock")
     {
         outcome.textContent = "You just got beat! The play made by you and the AI was "+pchoice+" and "+cchoice+".";
         cCount++;
-        score.textContent = pCount+"     -     "+cCount;
-        rCount.textContent = "(Round "+bCount+")";
+        score.textContent = pCount+"     -     "+cCount+"     (Round "+bCount+")";
     }
     else if (pchoice == cchoice)
     {
         outcome.textContent = "You tied with the AI! The play made by you and the AI was "+pchoice+" and "+cchoice+".";
-        score.textContent = pCount+"     -     "+cCount;
-        rCount.textContent = "(Round "+bCount+")";
+        score.textContent = pCount+"     -     "+cCount+"     (Round "+bCount+")";
     }
     else {
         outcome.textContent = "You just won! The play made by you and the AI was "+pchoice+" and "+cchoice+".";
         pCount++;
-        score.textContent = pCount+"     -     "+cCount;
-        rCount.textContent = "(Round "+bCount+")";
+        score.textContent = pCount+"     -     "+cCount+"     (Round "+bCount+")";
     }
 }
 
