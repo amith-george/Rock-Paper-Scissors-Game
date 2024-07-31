@@ -98,7 +98,11 @@ button{
 }
 
 
+<<<<<<< HEAD
 #result, #score{
+=======
+#result, #final, #score {
+>>>>>>> d7bdae730f932238d213eaecf4c83924dfc19343
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
