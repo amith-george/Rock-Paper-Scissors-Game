@@ -98,7 +98,7 @@ button{
 }
 
 
-#result, #final, #score, #rCount{
+#result, #score{
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
